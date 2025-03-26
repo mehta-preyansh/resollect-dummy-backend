@@ -19,7 +19,7 @@ app.get("/", (req: Request, res: Response) => {
 
   for (let i = 1; i <= total; i++) {
     loans.push({
-      loanNumber: `LN0${i}`,
+      loanNumber: `LN25U09${i}`,
       loanType: ["Personal", "Home", "Auto", "Business", "Education"][
         Math.floor(Math.random() * 5)
       ] as Loan["loanType"],
