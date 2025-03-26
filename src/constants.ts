@@ -5,3 +5,13 @@ export const borrowerNames = [
   "Vivaan Pillai", "Aadhya Roy", "Arjun Sinha", "Riya Thakur", "Yuvan Reddy",
   "Zara Menon", "Kian Das", "Trisha Paul", "Krish Bose", "Amaira Dutta"
 ];
+
+export const chipTags = [
+  "NPA",
+  "DM Order issued",
+  "Auction Scheduled",
+  "High risk",
+  "Recent",
+  "Closed",
+  "Pending",
+];

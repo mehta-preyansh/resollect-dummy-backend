@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import { Loan } from "./types";
 import { getRandomBorrower } from "./utils";
+import { chipTags } from "./constants";
 
 dotenv.config();
 
@@ -14,7 +15,9 @@ app.use(express.json())
 
 app.get("/", (req: Request, res: Response) => {
   const loans: Loan[] = [];
-  for (let i = 1; i <= 50; i++) {
+  const total = Math.floor(Math.random()*100) + 25;
+
+  for (let i = 1; i <= total; i++) {
     loans.push({
       loanNumber: `LN0${i}`,
       loanType: ["Personal", "Home", "Auto", "Business", "Education"][
@@ -44,7 +47,7 @@ app.get("/", (req: Request, res: Response) => {
       creditScore: Math.floor(Math.random() * 300) + 500,
     });
   }
-  res.send(loans);
+  res.send({loans, total, chipTags});
 })
 
 app.listen(port, () => {
