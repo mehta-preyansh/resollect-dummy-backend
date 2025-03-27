@@ -32,7 +32,7 @@ app.get("/", (req: Request, res: Response) => {
       region: ["New York", "California", "Texas", "Florida", "Illinois"][
         Math.floor(Math.random() * 5)
       ],
-      status: ["Approved", "Pending", "Rejected", "Active", "Closed", "NPA"][
+      status: ["Approved", "Pending", "Rejected", "Active", "Closed"][
         Math.floor(Math.random() * 6)
       ] as Loan["status"],
       appliedDate: `202${Math.floor(Math.random() * 5)}-${Math.floor(
