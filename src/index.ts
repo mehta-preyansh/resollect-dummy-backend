@@ -33,7 +33,7 @@ app.get("/", (req: Request, res: Response) => {
         Math.floor(Math.random() * 5)
       ],
       status: ["Approved", "Pending", "Rejected", "Active", "Closed"][
-        Math.floor(Math.random() * 6)
+        Math.floor(Math.random() * 5)
       ] as Loan["status"],
       appliedDate: `202${Math.floor(Math.random() * 5)}-${Math.floor(
         Math.random() * 12
