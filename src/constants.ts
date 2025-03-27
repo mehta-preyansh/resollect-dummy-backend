@@ -12,6 +12,5 @@ export const chipTags = [
   "Auction Scheduled",
   "High risk",
   "Recent",
-  "Closed",
   "Pending",
 ];
